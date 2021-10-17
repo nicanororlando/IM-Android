@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/principal">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/home_solid"
+                android:title="@string/menu_home" />
+            <item
+                android:id="@+id/coritarioFragment"
+                android:icon="@drawable/playlist_solid"
+                android:title="@string/menu_coritario" />
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/menu_gallery" />
+        </menu>
+    </item>
+
+    <item android:title="@string/redes_sociales">
+        <menu>
+            <item
+                android:id="@+id/facebookFragment"
+                android:icon="@drawable/facebook_circle_logo"
+                android:title="@string/conectate_to_facebook" />
+            <item
+                android:id="@+id/instagramFragment"
+                android:icon="@drawable/instagram_logo"
+                android:title="@string/conectate_to_instagram" />
+            <item
+                android:id="@+id/youtubeFragment"
+                android:icon="@drawable/youtube_logo"
+                android:title="@string/youtube" />
+        </menu>
+    </item>
+
+    <item android:title="@string/sobre_nosotros">
+        <menu>
+            <item
+                android:id="@+id/donacionesFragment"
+                android:icon="@drawable/bitcoin_logo"
+                android:title="@string/donaciones" />
+            <item
+                android:id="@+id/acercaDeFragment"
+                android:icon="@drawable/info_circle_solid"
+                android:title="@string/acerca_de" />
+        </menu>
+    </item>
+
+</menu>

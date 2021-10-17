@@ -1,0 +1,61 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">Instituto Misionero</string>
+    <string name="email_mio">nicanororlando@gmail.com</string>
+    <string name="email_im">institutomisionero2021@gmail.com</string>
+    <string name="login" >Iniciar Sesion</string>
+    <string name="instituto">Instituto</string>
+    <string name="misionero">Misionero</string>
+    <string name="title_activity_menu_slide"> </string>
+    <string name="action_settings">Configuracion</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="search_view">Buscar</string>
+
+    <!-- Login -->
+    <string name="iniciar_sesion_text">Iniciar sesion con tu cuenta</string>
+    <string name="omitir_inicio">Omitir Inicio de Sesion</string>
+
+    <!-- Inicio -->
+
+    <!-- Galeria -->
+    <string name="iv_foto">Foto</string>
+
+    <!-- Acerca de-->
+    <string name="desarrollado_por">Desarrollado por: Nicanor Orlando</string>
+    <string name="linkGmail"><a href="mailto:nicanororlando@gmail.com?subject=Consulta - Aplicacion IM">nicanororlando@gmail.com</a></string>
+    <string name="tienes_algun_problema">¿Tienes algún problema con la App?</string>
+    <string name="contactanos_y_con">¡Contactános a nuestro correo y con</string>
+    <string name="gusto_te_ayudamos">gusto te ayudamos!</string>
+    <string name="calificanos">¡Califica esta App!</string>
+    <string name="link_email_im"><a href="mailto:institutomisionero2021@gmail.com?subject=Consulta - Aplicacion IM">institutomisionero2021@gmail.com</a></string>
+
+    <!-- Donaciones -->
+    <string name="ver1">"Hermanos míos amados, estad firmes y</string>
+    <string name="ver2" >constantes, creciendo en la obra del </string>
+    <string name="ver3" >señor, siempre sabiendo que vuestro</string>
+    <string name="ver4" >trabajo en el señor no es vano."</string>
+    <string name="ver5" >1 Corintios 15:58</string>
+    <string name="pasos">Pasos para la donacion online:</string>
+    <string name="paso1">1) Donaciones con tarjeta de credito/debito:</string>
+    <string name="link_pago"><a href="https://www.pagos.uap.edu.ar">www.pagos.uap.edu.ar</a></string>
+    <string name="paso2">2) Busca la opcion de:</string>
+    <string name="paso2.1">"Donaciones Instituto Misionero"</string>
+    <string name="paso3">3) En la descripcion escribe: </string>
+    <string name="paso3.1">"Facultad de ciencias de la salud"</string>
+
+    <!-- Fragmentos de Navegacion -->
+    <string name="principal">Principal</string>
+    <string name="redes_sociales">Redes Sociales</string>
+    <string name="sobre_nosotros">Sobre Nosotros</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_coritario">Coritario</string>
+    <string name="title_activity_pdf">pdf</string>
+    <string name="conectate_to_instagram">Conectar con Instagram</string>
+    <string name="conectate_to_facebook">Conectar con Facebook</string>
+    <string name="youtube">Youtube</string>
+    <string name="donaciones">Donaciones</string>
+    <string name="calificar_app">Calificar esta App</string>
+    <string name="acerca_de">Acerca de esta App</string>
+
+</resources>

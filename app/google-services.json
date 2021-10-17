@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "865989979215",
+    "project_id": "registration-908bc",
+    "storage_bucket": "registration-908bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865989979215:android:62b619b78f58e6205c4e3a",
+        "android_client_info": {
+          "package_name": "com.institutomisionero.IM"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865989979215-39bun29uc1i4odg1qon1i4uadbogglrc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.institutomisionero.IM",
+            "certificate_hash": "77d78cf785c124a43a7faf0641d5fb4ebfa0449b"
+          }
+        },
+        {
+          "client_id": "865989979215-cdq2muqrobjop0tjmma63pvdrn14cbbq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxrlEp3p5wdFjnPoCEKB06AvFucQYuMv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865989979215-cdq2muqrobjop0tjmma63pvdrn14cbbq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

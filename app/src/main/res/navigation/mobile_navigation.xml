@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.institutomisionero.IM.ui.home.HomeFragment"
+        android:label="Instituto Misionero"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.institutomisionero.IM.ui.gallery.GalleryFragment"
+        android:label="Galeria"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/coritarioFragment"
+        android:name="com.institutomisionero.IM.ui.coritario.CoritarioFragment"
+        android:label=""
+        tools:layout="@layout/coritario_fragment" >
+        <action
+            android:id="@+id/action_coritarioFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/instagramFragment"
+        android:name="com.institutomisionero.IM.ui.secundario.InstagramFragment"
+        android:label=""
+        tools:layout="@layout/fragment_instagram" >
+        <action
+            android:id="@+id/action_instagramFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/facebookFragment"
+        android:name="com.institutomisionero.IM.ui.secundario.FacebookFragment"
+        android:label=""
+        tools:layout="@layout/facebook_fragment" >
+        <action
+            android:id="@+id/action_facebookFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/donacionesFragment"
+        android:name="com.institutomisionero.IM.ui.secundario.DonacionesFragment"
+        android:label="Donaciones"
+        tools:layout="@layout/fragment_donaciones" >
+        <action
+            android:id="@+id/action_donacionesFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/acercaDeFragment"
+        android:name="com.institutomisionero.IM.ui.secundario.AcercaDeFragment"
+        android:label="Acerca de nosotros"
+        tools:layout="@layout/fragment_acerca_de" >
+        <action
+            android:id="@+id/action_acercaDeFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/youtubeFragment"
+        android:name="com.institutomisionero.IM.ui.secundario.YoutubeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_youtube" >
+        <action
+            android:id="@+id/action_youtubeFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+</navigation>
