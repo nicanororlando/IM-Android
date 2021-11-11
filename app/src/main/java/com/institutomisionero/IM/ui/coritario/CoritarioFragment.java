@@ -53,7 +53,7 @@ public class CoritarioFragment extends Fragment {
         Lista.add(new Datos(12, "Arco iris"));
         Lista.add(new Datos(13, "Atardece"));
         Lista.add(new Datos(14, "Avancemos"));
-        Lista.add(new Datos(15, "Blanquea2"));
+        Lista.add(new Datos(15, "Blanqueados"));
         Lista.add(new Datos(16, "Brilla en mi"));
         Lista.add(new Datos(17, "Brilla, Jesús"));
         Lista.add(new Datos(18, "Brillar por ti"));                     //doble 17

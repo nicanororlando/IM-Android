@@ -22,7 +22,7 @@ public class PDF extends AppCompatActivity {
 
         if(i == 17 || i == 28 || i == 40 || i == 61 || i == 68 || i == 148) {
             if (i == 17) {
-                mPDFView.fromAsset("coritario.pdf")
+                mPDFView.fromAsset("coritario.nuevo.pdf")
                         .enableSwipe(true)
                         .swipeHorizontal(false)
                         .enableDoubletap(false)
@@ -38,7 +38,7 @@ public class PDF extends AppCompatActivity {
                         .load();
             }
             else if (i == 28) {
-                mPDFView.fromAsset("coritario.pdf")
+                mPDFView.fromAsset("coritario.nuevo.pdf")
                         .enableSwipe(true)
                         .swipeHorizontal(false)
                         .enableDoubletap(false)
@@ -54,7 +54,7 @@ public class PDF extends AppCompatActivity {
                         .load();
             }
             else if (i == 40){
-                mPDFView.fromAsset("coritario.pdf")
+                mPDFView.fromAsset("coritario.nuevo.pdf")
                         .enableSwipe(true)
                         .swipeHorizontal(false)
                         .enableDoubletap(false)
@@ -70,7 +70,7 @@ public class PDF extends AppCompatActivity {
                         .load();
             }
             else if (i == 61){
-                mPDFView.fromAsset("coritario.pdf")
+                mPDFView.fromAsset("coritario.nuevo.pdf")
                         .enableSwipe(true)
                         .swipeHorizontal(false)
                         .enableDoubletap(false)
@@ -86,7 +86,7 @@ public class PDF extends AppCompatActivity {
                         .load();
             }
             else if(i == 68){
-                mPDFView.fromAsset("coritario.pdf")
+                mPDFView.fromAsset("coritario.nuevo.pdf")
                         .enableSwipe(true)
                         .swipeHorizontal(false)
                         .enableDoubletap(false)
@@ -102,7 +102,7 @@ public class PDF extends AppCompatActivity {
                         .load();
             }
             else {
-                mPDFView.fromAsset("coritario.pdf")
+                mPDFView.fromAsset("coritario.nuevo.pdf")
                         .enableSwipe(true)
                         .swipeHorizontal(false)
                         .enableDoubletap(false)
@@ -119,10 +119,10 @@ public class PDF extends AppCompatActivity {
             }
         }
         else if(i >= 18 && i <= 27) {
-            mPDFView.fromAsset("coritario.pdf")
+            mPDFView.fromAsset("coritario.nuevo.pdf")
                     .enableSwipe(false)
                     .swipeHorizontal(true)
-                    .enableDoubletap(false)
+                    .enableDoubletap(true)
                     .pages(i+1)
                     .enableAnnotationRendering(false)
                     .scrollHandle(null)
@@ -137,10 +137,10 @@ public class PDF extends AppCompatActivity {
                     .load();
         }
         else if(i >= 29 && i <= 39){
-            mPDFView.fromAsset("coritario.pdf")
+            mPDFView.fromAsset("coritario.nuevo.pdf")
                     .enableSwipe(false)
                     .swipeHorizontal(true)
-                    .enableDoubletap(false)
+                    .enableDoubletap(true)
                     .pages(i+2)
                     .enableAnnotationRendering(false)
                     .scrollHandle(null)
@@ -155,10 +155,10 @@ public class PDF extends AppCompatActivity {
                     .load();
         }
         else if(i >= 41 && i <= 60) {
-            mPDFView.fromAsset("coritario.pdf")
+            mPDFView.fromAsset("coritario.nuevo.pdf")
                     .enableSwipe(false)
                     .swipeHorizontal(true)
-                    .enableDoubletap(false)
+                    .enableDoubletap(true)
                     .pages(i+3)
                     .enableAnnotationRendering(false)
                     .scrollHandle(null)
@@ -173,10 +173,10 @@ public class PDF extends AppCompatActivity {
                     .load();
         }
         else if(i >= 62 && i <= 67) {
-            mPDFView.fromAsset("coritario.pdf")
+            mPDFView.fromAsset("coritario.nuevo.pdf")
                     .enableSwipe(false)
                     .swipeHorizontal(true)
-                    .enableDoubletap(false)
+                    .enableDoubletap(true)
                     .pages(i+4)
                     .enableAnnotationRendering(false)
                     .scrollHandle(null)
@@ -191,10 +191,10 @@ public class PDF extends AppCompatActivity {
                     .load();
         }
         else if(i >= 69 && i <= 148) {
-            mPDFView.fromAsset("coritario.pdf")
+            mPDFView.fromAsset("coritario.nuevo.pdf")
                     .enableSwipe(false)
                     .swipeHorizontal(true)
-                    .enableDoubletap(false)
+                    .enableDoubletap(true)
                     .pages(i+5)
                     .enableAnnotationRendering(false)
                     .scrollHandle(null)
@@ -209,10 +209,10 @@ public class PDF extends AppCompatActivity {
                     .load();
         }
         else if (i >= 149){
-            mPDFView.fromAsset("coritario.pdf")
+            mPDFView.fromAsset("coritario.nuevo.pdf")
                     .enableSwipe(false)
                     .swipeHorizontal(true)
-                    .enableDoubletap(false)
+                    .enableDoubletap(true)
                     .pages(i+6)
                     .enableAnnotationRendering(false)
                     .scrollHandle(null)
@@ -227,10 +227,10 @@ public class PDF extends AppCompatActivity {
                     .load();
         }
         else{
-            mPDFView.fromAsset("coritario.pdf")
+            mPDFView.fromAsset("coritario.nuevo.pdf")
                     .enableSwipe(false)
                     .swipeHorizontal(true)
-                    .enableDoubletap(false)
+                    .enableDoubletap(true)
                     .pages(i)
                     .enableAnnotationRendering(false)
                     .scrollHandle(null)

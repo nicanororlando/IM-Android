@@ -22,6 +22,7 @@
 
     <!-- Acerca de-->
     <string name="desarrollado_por">Desarrollado por: Nicanor Orlando</string>
+    <string name="Lavado_de_manos">Todos los recursos (canciones, imagenes y textos) pertenecen a sus respectivos autores. Esta aplicación no tiene responsabilidad alguna ni lucro sobre los mismos.</string>
     <string name="linkGmail"><a href="mailto:nicanororlando@gmail.com?subject=Consulta - Aplicacion IM">nicanororlando@gmail.com</a></string>
     <string name="tienes_algun_problema">¿Tienes algún problema con la App?</string>
     <string name="contactanos_y_con">¡Contactános a nuestro correo y con</string>
