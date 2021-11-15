@@ -1,6 +1,8 @@
 package com.institutomisionero.IM;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import android.os.Bundle;
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.util.FitPolicy;
@@ -14,6 +16,13 @@ public class PDF extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
+
+        //Boton Atras
+        Toolbar toolbar = findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        setTitle("Coritario");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         dato = getIntent().getExtras();
         int i = dato.getInt("id");
@@ -30,7 +39,7 @@ public class PDF extends AppCompatActivity {
                         .enableAnnotationRendering(false)           //FALTA ACOMODAR ESPACIOSEFSFVDSA
                         .scrollHandle(null)
                         .enableAntialiasing(true)
-                        .spacing(-350)
+                        .spacing(0)
                         .autoSpacing(true)
                         .pageFitPolicy(FitPolicy.WIDTH)             //FLASDADVWEKFVJWEFV NWRJTHBJ
                         .fitEachPage(false)
@@ -46,7 +55,7 @@ public class PDF extends AppCompatActivity {
                         .enableAnnotationRendering(false)
                         .scrollHandle(null)
                         .enableAntialiasing(true)
-                        .spacing(-350)
+                        .spacing(0)
                         .autoSpacing(true)
                         .pageFitPolicy(FitPolicy.WIDTH)
                         .fitEachPage(false)
@@ -62,7 +71,7 @@ public class PDF extends AppCompatActivity {
                         .enableAnnotationRendering(false)
                         .scrollHandle(null)
                         .enableAntialiasing(true)
-                        .spacing(-350)
+                        .spacing(0)
                         .autoSpacing(true)
                         .pageFitPolicy(FitPolicy.WIDTH)
                         .fitEachPage(false)
@@ -78,7 +87,7 @@ public class PDF extends AppCompatActivity {
                         .enableAnnotationRendering(false)
                         .scrollHandle(null)
                         .enableAntialiasing(true)
-                        .spacing(-350)
+                        .spacing(0)
                         .autoSpacing(true)
                         .pageFitPolicy(FitPolicy.WIDTH)
                         .fitEachPage(false)
@@ -94,7 +103,7 @@ public class PDF extends AppCompatActivity {
                         .enableAnnotationRendering(false)
                         .scrollHandle(null)
                         .enableAntialiasing(true)
-                        .spacing(-350)
+                        .spacing(0)
                         .autoSpacing(true)
                         .pageFitPolicy(FitPolicy.WIDTH)
                         .fitEachPage(false)
@@ -110,7 +119,7 @@ public class PDF extends AppCompatActivity {
                         .enableAnnotationRendering(false)
                         .scrollHandle(null)
                         .enableAntialiasing(true)
-                        .spacing(-350)
+                        .spacing(0)
                         .autoSpacing(true)
                         .pageFitPolicy(FitPolicy.WIDTH)
                         .fitEachPage(false)

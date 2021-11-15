@@ -6,12 +6,17 @@
     android:layout_height="match_parent"
     android:background="#000">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <include layout="@layout/boton_atras" />
 
     <ImageView
         android:id="@+id/iv_foto"
         android:layout_width="match_parent"
-        android:layout_height="675dp"
+        android:layout_height="match_parent"
         android:contentDescription="@string/iv_foto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,5 +25,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/instagram_alt_logo" />
-
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

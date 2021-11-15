@@ -9,7 +9,7 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:popupTheme="@style/AppTheme.PopupOverlay">
+        app:titleTextColor="@color/colorWhite">
 
     </androidx.appcompat.widget.Toolbar>
 
