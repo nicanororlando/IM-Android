@@ -8,8 +8,8 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@mipmap/iconoim"
-        android:roundIcon="@mipmap/iconoim_round"
+        android:icon="@mipmap/icono_im"
+        android:roundIcon="@mipmap/icono_im_round"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
