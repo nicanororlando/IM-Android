@@ -17,7 +17,7 @@
 
         <com.github.barteksc.pdfviewer.PDFView
             android:id="@+id/pdfView"
-            android:layout_width="510dp"
+            android:layout_width="525dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:gravity="center"

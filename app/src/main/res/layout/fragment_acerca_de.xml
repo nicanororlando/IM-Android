@@ -94,27 +94,27 @@
             android:gravity="center"
             android:text="@string/tienes_algun_problema"
             android:textColor="@color/colorBlack"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-1dp"
+            android:layout_marginTop="-2dp"
             android:gravity="center"
             android:text="@string/contactanos_y_con"
             android:textColor="@color/colorBlack"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-1dp"
+            android:layout_marginTop="-2dp"
             android:gravity="center"
             android:text="@string/gusto_te_ayudamos"
             android:textColor="@color/colorBlack"
-            android:textSize="15sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/linkim"

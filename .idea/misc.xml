@@ -3,19 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/btn.xml" value="0.13914473684210527" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_pdf.xml" value="0.1" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/fragment_acerca_de.xml" value="0.12894736842105264" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/activity_imagen_completa.xml" value="0.12260928961748634" />
+        <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/activity_login.xml" value="0.11919398907103824" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/activity_pdf.xml" value="0.1" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/app_bar_menu_slide.xml" value="0.12260928961748634" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/boton_atras.xml" value="0.12260928961748634" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/coritario_fragment.xml" value="0.12260928961748634" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/fragment_acerca_de.xml" value="0.16" />
+        <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/layout/fragment_home.xml" value="0.12090163934426229" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/mipmap-anydpi-v26/icono_im.xml" value="0.13914473684210527" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/mipmap-anydpi-v26/icono_im_round.xml" value="0.13914473684210527" />
         <entry key="..\:/Users/nican/AndroidStudioProjects/IM/app/src/main/res/mipmap-anydpi-v26/iconoim.xml" value="0.13914473684210527" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
