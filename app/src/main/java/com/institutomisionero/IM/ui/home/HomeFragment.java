@@ -1,5 +1,8 @@
 package com.institutomisionero.IM.ui.home;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +31,8 @@ public class HomeFragment extends Fragment {
         Button coritario = view.findViewById(R.id.coritariobutton);
 
         galeria.setOnClickListener(v -> {
+            galeria.setBackgroundResource(R.drawable.button_pressed);
+
             // Crea el nuevo fragmento y la transacción.
             Fragment nuevoFragmento = new GalleryFragment();
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
@@ -39,6 +44,8 @@ public class HomeFragment extends Fragment {
         });
 
         coritario.setOnClickListener(v -> {
+            coritario.setBackgroundResource(R.drawable.button_pressed);
+
             // Crea el nuevo fragmento y la transacción.
             Fragment nuevoFragmento = new CoritarioFragment();
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
@@ -51,4 +58,6 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
+
+
 }

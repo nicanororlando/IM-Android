@@ -1,12 +1,13 @@
         <resources xmlns:tools="http://schemas.android.com/tools">
 
         <style name="AppTheme.NoActionBar" >
-            <item name="colorPrimary">@color/colorRed</item>
-            <item name="colorPrimaryDark">@color/colorRed</item>
+            <item name="colorPrimary">@color/colorRed</item>        <!--Color del tabBar-->
+            <item name="colorPrimaryDark">@color/colorRed2</item>    <!--Color arriba del tabBar-->
             <item name="windowActionBar">false</item>
             <item name="windowNoTitle">true</item>
-            <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/colorRed</item>
-    </style>
+            <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/colorRed</item>   <!--Color de botones de abajo-->
+            <!--textColorPrimary para dar color de fuente-->
+        </style>
 
         <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
