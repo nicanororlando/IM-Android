@@ -1,3 +1,9 @@
+/*
+ * Created by Nicanor Orlando.
+ * Copyright (c) 7/12/21 09:33.
+ * All rights reserved.
+ */
+
 package com.institutomisionero.IM;
 
 import android.content.Intent;
@@ -99,6 +105,7 @@ public class MenuSlideActivity extends AppCompatActivity {
             btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    btnCerrarSesion.setBackgroundResource(R.drawable.btn_pressed);
                     //cerrar sesion con firebase
                     mAuth.signOut();
                     //cerrar sesion con google sign out
@@ -124,6 +131,8 @@ public class MenuSlideActivity extends AppCompatActivity {
             //Boton
             btnCerrarSesion.setText(R.string.login);
             btnCerrarSesion.setOnClickListener(v -> {
+                btnCerrarSesion.setBackgroundResource(R.drawable.btn_pressed);
+
                 Intent intent = new Intent(MenuSlideActivity.this, loginActivity.class);
                 startActivity(intent);
                 MenuSlideActivity.this.finish();

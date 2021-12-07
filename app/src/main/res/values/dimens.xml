@@ -1,3 +1,9 @@
+<!--
+  ~ Created by Nicanor Orlando.
+  ~ Copyright (c) 7/12/21 09:33.
+  ~ All rights reserved.
+  -->
+
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>

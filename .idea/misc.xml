@@ -4,8 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/btn.xml" value="0.13914473684210527" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/btn2.xml" value="0.13914473684210527" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/btn_bg.xml" value="0.13914473684210527" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/btn_im.xml" value="0.13914473684210527" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/btn_logout.xml" value="0.13914473684210527" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/btn_pressed.xml" value="0.13914473684210527" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/button_pressed.xml" value="0.13914473684210527" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/ic_google.xml" value="0.13914473684210527" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_login.xml" value="0.12226775956284153" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_pdf.xml" value="0.1" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/coritario_fragment.xml" value="0.12226775956284153" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/fragment_acerca_de.xml" value="0.12894736842105264" />

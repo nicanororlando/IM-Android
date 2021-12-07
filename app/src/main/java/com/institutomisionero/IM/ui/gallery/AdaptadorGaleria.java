@@ -1,4 +1,10 @@
- package com.institutomisionero.IM.ui.gallery;
+ /*
+ * Created by Nicanor Orlando. 
+ * Copyright (c) 7/12/21 09:33. 
+ * All rights reserved. 
+ */
+
+package com.institutomisionero.IM.ui.gallery;
 
 import android.content.Context;
 import android.view.LayoutInflater;

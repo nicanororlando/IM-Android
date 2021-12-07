@@ -1,4 +1,10 @@
-        <resources xmlns:tools="http://schemas.android.com/tools">
+        <!--
+  ~ Created by Nicanor Orlando.
+  ~ Copyright (c) 7/12/21 09:33.
+  ~ All rights reserved.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
 
         <style name="AppTheme.NoActionBar" >
             <item name="colorPrimary">@color/colorRed</item>        <!--Color del tabBar-->

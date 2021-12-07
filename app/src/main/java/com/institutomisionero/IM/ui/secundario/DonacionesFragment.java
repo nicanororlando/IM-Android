@@ -1,3 +1,9 @@
+/*
+ * Created by Nicanor Orlando.
+ * Copyright (c) 7/12/21 09:33.
+ * All rights reserved.
+ */
+
 package com.institutomisionero.IM.ui.secundario;
 
 import android.os.Bundle;

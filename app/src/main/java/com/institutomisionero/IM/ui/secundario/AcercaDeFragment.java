@@ -1,3 +1,9 @@
+/*
+ * Created by Nicanor Orlando.
+ * Copyright (c) 7/12/21 09:33.
+ * All rights reserved.
+ */
+
 package com.institutomisionero.IM.ui.secundario;
 
 import android.content.ActivityNotFoundException;
@@ -36,6 +42,7 @@ public class AcercaDeFragment extends Fragment {
         calificarApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                calificarApp.setBackgroundResource(R.drawable.btn2);
                 try {
                     startActivity(new Intent((Intent.ACTION_VIEW), Uri.parse("market://details?id=" + getContext().getPackageName() )));
                 }
