@@ -11,49 +11,29 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivity extends loginActivity {
-
-    private static final String MY_PREFERENCES = "my_preferences";
-
-    public static boolean isFirst(Context context){
-        final SharedPreferences reader = context.getSharedPreferences(MY_PREFERENCES, Context.MODE_PRIVATE);
-        final boolean first = reader.getBoolean("is_first", true);
-
-        if(first) {
-            final SharedPreferences.Editor editor = reader.edit();
-            editor.putBoolean("is_first", false);
-            editor.apply();
-        }
-        return first;
-    }
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        boolean isFirstTime = MainActivity.isFirst(MainActivity.this);
+        TimerTask tarea = new TimerTask() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, MenuSlideActivity.class);
+                startActivity(intent);
+                MainActivity.this.finish();
+            }
+        };
 
-        if(isFirstTime) {
-            Intent intent = new Intent(MainActivity.this, loginActivity.class);
-            startActivity(intent);
-            MainActivity.this.finish();
-        }
-        else {
-            TimerTask tarea = new TimerTask() {
-                @Override
-                public void run() {
-                    Intent intent = new Intent(MainActivity.this, MenuSlideActivity.class);
-                    startActivity(intent);
-                    MainActivity.this.finish();
-                }
-            };
+        Timer tiempo = new Timer();
+        tiempo.schedule(tarea, 1500);
 
-            Timer tiempo = new Timer();
-            tiempo.schedule(tarea, 1000);
-        }
     }
 }

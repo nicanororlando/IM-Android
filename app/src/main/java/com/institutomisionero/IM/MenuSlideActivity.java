@@ -45,7 +45,6 @@ public class MenuSlideActivity extends AppCompatActivity {
     private TextView userNombre,userEmail;
     private CircleImageView userImg;
     private FirebaseAuth mAuth;
-    Button btnCerrarSesion;
 
     //Variables opcionales para desloguear de google tambien
     private GoogleSignInClient mGoogleSignInClient;
@@ -73,9 +72,37 @@ public class MenuSlideActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu_slide);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
 
-        //******************************************************************************************************************
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        //getMenuInflater().inflate(R.menu.menu_slide, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu_slide);
+        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+                || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+            getFragmentManager().popBackStack();
+        } else {
+            getFragmentManager().popBackStack();
+        }
+    }
+}
+
+/*
         //Banner de datos de usuario
         NavigationView navigationview = (NavigationView) findViewById(R.id.nav_view);
         View navHeaderView =  navigationView.getHeaderView(0);;
@@ -128,6 +155,7 @@ public class MenuSlideActivity extends AppCompatActivity {
             userNombre.setText(R.string.app_name);
             userEmail.setText(R.string.email_im);
 
+
             //Boton
             btnCerrarSesion.setText(R.string.login);
             btnCerrarSesion.setOnClickListener(v -> {
@@ -137,34 +165,5 @@ public class MenuSlideActivity extends AppCompatActivity {
                 startActivity(intent);
                 MenuSlideActivity.this.finish();
             });
-        }
 
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.menu_slide, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_menu_slide);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
-
-    @Override
-    public void onBackPressed() {
-
-        int count = getFragmentManager().getBackStackEntryCount();
-
-        if (count == 0) {
-            super.onBackPressed();
-            getFragmentManager().popBackStack();
-        } else {
-            getFragmentManager().popBackStack();
-        }
-    }
-}
+ */

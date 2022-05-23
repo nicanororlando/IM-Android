@@ -30,7 +30,7 @@ import java.util.ArrayList;
 public class CoritarioFragment extends Fragment {
 
     ListView listaDatos;
-    ArrayList<Datos> Lista = new ArrayList<>();
+    ArrayList<Datos> Lista = new ArrayList<Datos>();
 
     Adaptador miadaptador;
 

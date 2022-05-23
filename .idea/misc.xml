@@ -12,7 +12,7 @@
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/button_pressed.xml" value="0.13914473684210527" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/drawable/ic_google.xml" value="0.13914473684210527" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_imagen_completa.xml" value="0.12894736842105264" />
-        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_login.xml" value="0.12226775956284153" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_login.xml" value="0.15" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_menu_slide.xml" value="0.12894736842105264" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/activity_pdf.xml" value="0.1" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/app_bar_menu_slide.xml" value="0.12894736842105264" />
@@ -23,7 +23,7 @@
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/fragment_gallery.xml" value="0.12894736842105264" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/list_item.xml" value="0.12226775956284153" />
-        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/nav_header_menu_slide.xml" value="0.12894736842105264" />
+        <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/layout/nav_header_menu_slide.xml" value="0.22" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/menu/activity_main_drawer.xml" value="0.12894736842105264" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/menu/menu_slide.xml" value="0.12894736842105264" />
         <entry key="..\:/Proyectos/AndroidStudioProjects/IM/app/src/main/res/mipmap-anydpi-v26/icono_im.xml" value="0.1" />

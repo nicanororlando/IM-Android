@@ -35,6 +35,41 @@ public class PDF extends AppCompatActivity {
 
         mPDFView = findViewById(R.id.pdfView);
 
+        if (i == 17 | i == 28 | i == 40 | i == 61 | i == 68 | i == 148) {
+            mPDFView.fromAsset("cancion" + (i + 1) + ".pdf")
+                    .enableSwipe(true)
+                    .swipeHorizontal(false)
+                    .enableDoubletap(false)
+                    .pages(0, 1)
+                    .enableAnnotationRendering(false)
+                    .scrollHandle(null)
+                    .enableAntialiasing(true)
+                    .spacing(-50)
+                    .autoSpacing(true)
+                    .pageFitPolicy(FitPolicy.WIDTH)
+                    .fitEachPage(false)
+                    .nightMode(false)
+                    .load();
+        }
+        else mPDFView.fromAsset("coritario.pdf")
+                .enableSwipe(false)
+                .swipeHorizontal(true)
+                .pages(i)
+                .spacing(0)
+                .pageSnap(true)
+                .pageFling(true)
+                .enableDoubletap(true)
+                .scrollHandle(null)
+                .enableAntialiasing(true)
+                .autoSpacing(true)
+                .pageFitPolicy(FitPolicy.WIDTH)
+                .fitEachPage(false)
+                .nightMode(false)
+                .load();
+    }
+}
+
+/*
         if(i == 17 || i == 28 || i == 40 || i == 61 || i == 68 || i == 148) {
             if (i == 17) {
                 mPDFView.fromAsset("coritario.nuevo.pdf")
@@ -259,5 +294,4 @@ public class PDF extends AppCompatActivity {
                     .nightMode(false)
                     .load();
         }
-    }
-}
+        */

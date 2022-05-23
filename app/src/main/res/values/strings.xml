@@ -21,8 +21,6 @@
     <string name="iniciar_sesion_text">Iniciar sesion con tu cuenta</string>
     <string name="omitir_inicio">Omitir Inicio de Sesion</string>
 
-    <!-- Inicio -->
-
     <!-- Galeria -->
     <string name="iv_foto">Foto</string>
 
@@ -44,7 +42,7 @@
     <string name="ver5" >1 Corintios 15:58</string>
     <string name="pasos">Pasos para la donacion online:</string>
     <string name="paso1">1) Donaciones con tarjeta de credito/debito:</string>
-    <string name="link_pago"><a href="https://www.pagos.uap.edu.ar">www.pagos.uap.edu.ar</a></string>
+    <string name="link_pago"><a href="https://pagos.uap.edu.ar">pagos.uap.edu.ar</a></string>
     <string name="paso2">2) Busca la opcion de:</string>
     <string name="paso2.1">"Donaciones Instituto Misionero"</string>
     <string name="paso3">3) En la descripcion escribe: </string>

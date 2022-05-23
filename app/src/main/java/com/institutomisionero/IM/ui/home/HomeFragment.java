@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
 
             // Crea el nuevo fragmento y la transacción.
             Fragment nuevoFragmento = new GalleryFragment();
-            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
             transaction.replace(R.id.nav_host_fragment_content_menu_slide, nuevoFragmento);
             transaction.addToBackStack(null);
 
@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
 
             // Crea el nuevo fragmento y la transacción.
             Fragment nuevoFragmento = new CoritarioFragment();
-            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
             transaction.replace(R.id.nav_host_fragment_content_menu_slide, nuevoFragmento);
             transaction.addToBackStack(null);
 
