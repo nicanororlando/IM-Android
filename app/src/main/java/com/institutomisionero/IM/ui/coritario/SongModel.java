@@ -6,12 +6,12 @@
 
 package com.institutomisionero.IM.ui.coritario;
 
-public class Datos{
+public class SongModel {
 
-    private int posicion;
-    private String cancion;
+    private final int posicion;
+    private final String cancion;
 
-    public Datos(int i, String cancion) {
+    public SongModel(int i, String cancion) {
         this.posicion = i;
         this.cancion = cancion;
     }

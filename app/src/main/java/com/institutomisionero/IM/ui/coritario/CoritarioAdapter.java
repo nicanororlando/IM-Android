@@ -20,13 +20,13 @@ import com.institutomisionero.IM.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Adaptador extends BaseAdapter implements Filterable{
+public class CoritarioAdapter extends BaseAdapter implements Filterable{
 
     Context contexto;
-    List<Datos> ListaObjetos;
-    List<Datos> ListaObjetosFiltrado;
+    List<SongModel> ListaObjetos;
+    List<SongModel> ListaObjetosFiltrado;
 
-    public Adaptador(Context contexto, ArrayList<Datos> listaObjetos) {
+    public CoritarioAdapter(Context contexto, ArrayList<SongModel> listaObjetos) {
         this.contexto = contexto;
         this.ListaObjetos = listaObjetos;
         this.ListaObjetosFiltrado = listaObjetos;
@@ -83,9 +83,9 @@ public class Adaptador extends BaseAdapter implements Filterable{
 
                 else{
                     String searchStr = constraint.toString().toLowerCase();
-                    ArrayList<Datos> resultData = new ArrayList<>();
+                    ArrayList<SongModel> resultData = new ArrayList<>();
 
-                    for (Datos datos:ListaObjetosFiltrado) {
+                    for (SongModel datos:ListaObjetosFiltrado) {
                         if (datos.getTitulo().toString().toLowerCase().contains(searchStr) ||
                                 String.valueOf(datos.getId()).toLowerCase().contains(searchStr)){
                             resultData.add(datos);
@@ -100,7 +100,7 @@ public class Adaptador extends BaseAdapter implements Filterable{
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
-                ListaObjetos = (ArrayList<Datos>) results.values;
+                ListaObjetos = (ArrayList<SongModel>) results.values;
 
                 notifyDataSetChanged();
             }

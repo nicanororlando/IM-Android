@@ -16,6 +16,7 @@
     <string name="action_settings">Configuracion</string>
     <string name="cerrar_sesion">Cerrar Sesión</string>
     <string name="search_view">Buscar</string>
+    <string name="open_link">Abrir link</string>
 
     <!-- Login -->
     <string name="iniciar_sesion_text">Iniciar sesion con tu cuenta</string>

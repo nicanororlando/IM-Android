@@ -19,10 +19,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ImagenCompleta"
-            android:parentActivityName=".MenuSlideActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
         <activity android:name=".PDF"
             android:parentActivityName=".MenuSlideActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
@@ -30,7 +26,7 @@
         <activity
             android:name=".MenuSlideActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
 
         <activity android:name=".MainActivity"
             android:exported="true"

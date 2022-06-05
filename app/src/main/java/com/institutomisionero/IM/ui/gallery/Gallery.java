@@ -1,73 +1,45 @@
 /*
  * Created by Nicanor Orlando.
- * Copyright (c) 7/12/21 09:33.
+ * Copyright (c) 5/30/22, 12:54 PM.
  * All rights reserved.
  */
 
 package com.institutomisionero.IM.ui.gallery;
 
 import android.annotation.SuppressLint;
-import android.app.AlertDialog;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
 
 import android.util.Log;
-import android.widget.Button;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import org.imaginativeworld.whynotimagecarousel.listener.CarouselListener;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.viewbinding.ViewBinding;
-
-import com.institutomisionero.IM.R;
-
-import org.imaginativeworld.whynotimagecarousel.ImageCarousel;
-import org.imaginativeworld.whynotimagecarousel.model.CarouselItem;
-
-public class GalleryFragment extends Fragment {
+public class Gallery extends AppCompatActivity {
     //private final String data = "http://localhost:5000/data/";
     private final String data = "https://nubecolectiva.com/blog/tutos/demos/leer_json_android_java/datos/postres.json";
     private final int codigodatos = 1;
 
-    private ProgressBar progressBar;
-    protected ImageCarousel carousel;
-    List<CarouselItem> carouselList = new ArrayList<>();
-    ArrayList<GalleryModel> galleryModelArrayList;
+    List<GalleryModel> listJSON;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    public Gallery(ArrayList<GalleryModel> listJSON){
+        this.listJSON = listJSON;
+    }
 
-        View view = inflater.inflate(R.layout.fragment_gallery, container, false);
-
-        progressBar = view.findViewById(R.id.progressBar);
-        carousel = view.findViewById(R.id.carousel);
-
-        // Register lifecycle. For activity this will be lifecycle/getLifecycle() and for fragments it will be viewLifecycleOwner/getViewLifecycleOwner().
-        carousel.registerLifecycle(getLifecycle());
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         // Llamo al método para leer el archivo JSON.
         leerJSON();
-
-        return view;
     }
 
     @SuppressLint("StaticFieldLeak")
@@ -88,7 +60,6 @@ public class GalleryFragment extends Fragment {
                 try {
                     HttpRequest req = new HttpRequest(data);
                     response = req.prepare(HttpRequest.Method.POST).reciboDatos(map).enviaryRecibirString();
-                    Log.d("JSON", response);
                 } catch (Exception e) {
                     response = e.getMessage();
                 }
@@ -105,31 +76,23 @@ public class GalleryFragment extends Fragment {
     }
 
     public void tareaCompletada(String response, int serviceCode) {
-
         // Uso un case y le paso la variable 'codigodatos'
         if (serviceCode == codigodatos) {
 
             // Verifico si los datos se recibieron.
             if (siCorrecto(response)) {
 
-                // A mi modelo le paso el método obtenerInformacion(), este método lo crearé más adelante.
-                galleryModelArrayList = obtenerInformacion(response);
-
-                progressBar.setVisibility(View.GONE);
-
-                llenarCarousel();
-
+                // A mi modelo le paso el método obtenerInformacion().
+                obtenerInformacion(response);
+                Log.d("list", listJSON.toString());
             } else {
                 // Si hubo error, lo muestro en un Toast
-                Toast.makeText(this.getContext(), obtenerCodigoError(response), Toast.LENGTH_SHORT).show();
+                Toast.makeText(Gallery.this, obtenerCodigoError(response), Toast.LENGTH_SHORT).show();
             }
         }
     }
 
-    public ArrayList<GalleryModel> obtenerInformacion(String response) {
-
-        // Creo un array con los datos JSON que he obtenido
-        ArrayList<GalleryModel> listJSON = new ArrayList<>();
+    public void obtenerInformacion(String response) {
 
         // Solicito los datos al archivo JSON
         try {
@@ -154,7 +117,7 @@ public class GalleryFragment extends Fragment {
                     // Selecciono dato por dato
                     dataModel.setId(objetos.getInt("id"));
                     dataModel.setTitle(objetos.getString("stock"));
-                    dataModel.setUrl(objetos.getString("img"));
+                    dataModel.setUrl(objetos.getString("url"));
                     dataModel.setImage(objetos.getString("img"));
                     dataModel.setDescription(objetos.getString("nombre"));
 
@@ -165,68 +128,6 @@ public class GalleryFragment extends Fragment {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return listJSON;
-    }
-
-    public void llenarCarousel() {
-        for(int i = 0; i < galleryModelArrayList.size(); i++){
-            carouselList.add(new CarouselItem(
-                    galleryModelArrayList.get(i).getImage(),
-                    galleryModelArrayList.get(i).getTitle()
-            ));
-        }
-
-        carousel.setData(carouselList);
-
-        carousel.setCarouselListener(new CarouselListener() {
-            @Nullable
-            @Override
-            public ViewBinding onCreateViewHolder(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup viewGroup) {
-                return null;
-            }
-
-            @Override
-            public void onBindViewHolder(@NonNull ViewBinding viewBinding, @NonNull CarouselItem carouselItem, int i) {
-
-            }
-
-            @Override
-            public void onClick(int i, @NonNull CarouselItem carouselItem) {
-                createCustomDialog(i).show();
-            }
-
-            @Override
-            public void onLongClick(int i, @NonNull CarouselItem carouselItem) {
-
-            }
-        });
-    }
-
-    public AlertDialog createCustomDialog(int i) {
-        final AlertDialog alertDialog;
-        final AlertDialog.Builder builder = new AlertDialog.Builder(this.getContext(), R.style.DialogTheme);
-
-        // Get the layout inflater
-        LayoutInflater inflater = getLayoutInflater();
-
-        // Pasamos null como vista principal porque va en el diseño del diálogo
-        View v = inflater.inflate(R.layout.dialog_link, null);
-
-        // builder.setView(inflater.inflate(R.layout.dialog_signin, null))
-        Button openLink = (Button) v.findViewById(R.id.openLink);
-
-        builder.setView(v);
-        alertDialog = builder.create();
-
-        // Add action buttons
-        openLink.setOnClickListener(
-                v1 -> {
-                    Uri uri = Uri.parse(galleryModelArrayList.get(i).getUrl());
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, uri);
-                    startActivity(browserIntent);
-                }
-        );
-        return alertDialog;
     }
 
     public boolean siCorrecto(String response) {

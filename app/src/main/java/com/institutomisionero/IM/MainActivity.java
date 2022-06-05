@@ -34,6 +34,5 @@ public class MainActivity extends AppCompatActivity {
 
         Timer tiempo = new Timer();
         tiempo.schedule(tarea, 1500);
-
     }
 }
